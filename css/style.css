@@ -1,0 +1,244 @@
+.entete {
+  height: 100vh;
+  background-color: #f7f3e9;
+  display: block;
+}
+
+.container-fluid {
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #f7f3e9;
+  display: block;
+
+}
+.imgBloc2{
+  height:90vh;
+  position:absolute;
+  left:-5%;
+}
+.logoContain {
+  z-index: 2;
+  color: blue;
+  height: 50vh;
+  width: 50vh;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.blocTxt{
+  width:30%;
+  float:right;
+  margin-top: 250px;
+  margin-right: 100px;
+}
+.imgBloc{
+  height:100vh;
+  position:absolute;
+  left:15%;
+  top:5%;
+  z-index: 3;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.video {
+  height: 49vh;
+  width: 49vh;
+  z-index: 1;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+video.fillWidth {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.losange1, .losange2 {
+  z-index: 3;
+}
+
+.losange1.grand {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 0;
+  right: -5%;
+}
+
+.losange2.grand {
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  top: -3%;
+  right: 30%;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.place {
+  height: 1000px;
+}
+
+.losange1.petit {
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  left: 15%;
+  top: 30%;
+}
+
+.losange2.petit {
+  width: 25vw;
+  height: 25vw;
+  position: absolute;
+  left: -5%;
+  top: 45%;
+}
+
+div#slider {
+  width: 40%;
+  max-width: 1000px;
+  overflow: hidden;
+  position:absolute;
+  top:40%;
+  left:0%;
+  z-index: 4;
+
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+  z-index: 4;
+}
+
+div#slider figure img {
+  width: 20%;
+  height: auto;
+  float: left;
+  z-index: 4;
+  background-color: blue;
+  color:red;
+}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+.page2{
+  z-index: 5;
+  height:100%;
+}
+
+ .page2 .losange1.petit {
+  top:75%;
+  left:5%;
+  width:10vw;
+  height:10vw;
+}
+ .page2 .losange2.grand {
+  top:70%;
+  left:8%;
+  width:13vw;
+  height:13vw;
+}
+ .page2 .losange1.grand {
+  top:10%;
+  left:28%;
+  width:13vw;
+  height:13vw;
+}
+ .page4 .losange1.petit {
+  top:75%;
+  left:70%;
+  width:10vw;
+  height:10vw;
+}
+ .page4 .losange2.grand {
+  top:70%;
+  right:8%;
+  width:13vw;
+  height:13vw;
+}
+ .page4 .losange1.grand {
+  top:5%;
+  right:38%;
+  width:13vw;
+  height:13vw;
+}
+
+.page4{
+  height:100vh;
+}
+.page3{
+  height:100vh;
+}
+
+h3 {
+  display: inline-block;
+  padding: 10px;
+  background: grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.full-screen {
+  width:100vw;
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#mycarousel{
+  margin:0;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  z-index: 2
+}
+.item{
+  overflow: hidden;
+  width:100vw;
+  height:100%;
+}
+.page5{
+  height:100vh;
+}
+
+.bis{
+  -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    width:400px;
+    height:400px;
+    z-index: 8;
+}
