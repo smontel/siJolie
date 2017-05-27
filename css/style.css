@@ -10,7 +10,6 @@
   height: 100vh;
   background-color: #f7f3e9;
   display: block;
-
 }
 .imgBloc2{
   height:90vh;
@@ -212,7 +211,6 @@ h3 {
 }
 
 .full-screen {
-  width:100vw;
   height:100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -241,4 +239,20 @@ h3 {
     width:400px;
     height:400px;
     z-index: 8;
+    position:absolute;
+    bottom:10%;
+    left:20%;
+}
+
+.page5 .losange2.grand{
+  width:565px;
+  height:565px;
+  position:absolute;
+  top:45%;
+  right:70%;
+}
+
+.page5 .losange2.grand img{
+  height:400px;
+  width:400px;
 }
