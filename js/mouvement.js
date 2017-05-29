@@ -28,22 +28,22 @@ function moveBackground() {
   translate3 = 'translate(' + x3 + 'px, ' + y3 + 'px) scale(1.1)';
   translate4 = 'translate(' + x4 + 'px, ' + y4 + 'px) scale(1.1)';
 
-  $('.losange1.grand').css({
+  $('.mouv1').css({
     '-webit-transform': translate,
     '-moz-transform': translate,
     'transform': translate
   });
-  $('.losange2.grand').css({
+  $('.mouv2').css({
     '-webit-transform': translate2,
     '-moz-transform': translate2,
     'transform': translate2
   });
-  $('.losange1.petit').css({
+  $('.mouv3').css({
     '-webit-transform': translate3,
     '-moz-transform': translate3,
     'transform': translate3
   });
-  $('.losange2.petit').css({
+  $('.mouv4').css({
     '-webit-transform': translate4,
     '-moz-transform': translate4,
     'transform': translate4

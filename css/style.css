@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'min'; /*a name to be used later*/
+    src: url('font/QuaverSans.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'maj'; /*a name to be used later*/
+    src: url('font/Lavanderia-Sturdy.otf'); /*URL to font*/
+}
+
+p, h1, h2, div{
+  font-family: 'min';
+  font-size: 1.1em;
+}
+.col-md-12{
+  height:100%;
+}
+.maj{
+  font-family: 'maj';
+}
 .entete {
   height: 100vh;
   background-color: #f7f3e9;
@@ -7,7 +27,6 @@
 .container-fluid {
   padding: 0;
   overflow: hidden;
-  height: 100vh;
   background-color: #f7f3e9;
   display: block;
 }
@@ -29,16 +48,16 @@
   right: 0;
 }
 .blocTxt{
-  width:30%;
+  width:500px;;
   float:right;
-  margin-top: 250px;
+  margin-top: 50px;
   margin-right: 100px;
 }
 .imgBloc{
   height:100vh;
   position:absolute;
   left:15%;
-  top:5%;
+  top:0;
   z-index: 3;
 }
 
@@ -66,140 +85,19 @@ video.fillWidth {
   position: absolute;
 }
 
-.losange1, .losange2 {
-  z-index: 3;
-}
-
-.losange1.grand {
-  width: 20vw;
-  height: 20vw;
-  position: absolute;
-  top: 0;
-  right: -5%;
-}
-
-.losange2.grand {
-  width: 10vw;
-  height: 10vw;
-  position: absolute;
-  top: -3%;
-  right: 30%;
-}
-
 .img {
   width: 100%;
   height: 100%;
 }
+.row{
+    height:100vh;
+    width:100%;
+    margin:0;
+    position:relative;
+  }
 
-.place {
-  height: 1000px;
-}
-
-.losange1.petit {
-  width: 15vw;
-  height: 15vw;
-  position: absolute;
-  left: 15%;
-  top: 30%;
-}
-
-.losange2.petit {
-  width: 25vw;
-  height: 25vw;
-  position: absolute;
-  left: -5%;
-  top: 45%;
-}
-
-div#slider {
-  width: 40%;
-  max-width: 1000px;
-  overflow: hidden;
-  position:absolute;
-  top:40%;
-  left:0%;
-  z-index: 4;
-
-}
-
-div#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: left;
-  animation: 30s slidy infinite;
-  z-index: 4;
-}
-
-div#slider figure img {
-  width: 20%;
-  height: auto;
-  float: left;
-  z-index: 4;
-  background-color: blue;
-  color:red;
-}
-
-@keyframes slidy {
-  0% { left: 0%; }
-  20% { left: 0%; }
-  25% { left: -100%; }
-  45% { left: -100%; }
-  50% { left: -200%; }
-  70% { left: -200%; }
-  75% { left: -300%; }
-  95% { left: -300%; }
-  100% { left: -400%; }
-}
-.page2{
-  z-index: 5;
-  height:100%;
-}
-
- .page2 .losange1.petit {
-  top:75%;
-  left:5%;
-  width:10vw;
-  height:10vw;
-}
- .page2 .losange2.grand {
-  top:70%;
-  left:8%;
-  width:13vw;
-  height:13vw;
-}
- .page2 .losange1.grand {
-  top:10%;
-  left:28%;
-  width:13vw;
-  height:13vw;
-}
- .page4 .losange1.petit {
-  top:75%;
-  left:70%;
-  width:10vw;
-  height:10vw;
-}
- .page4 .losange2.grand {
-  top:70%;
-  right:8%;
-  width:13vw;
-  height:13vw;
-}
- .page4 .losange1.grand {
-  top:5%;
-  right:38%;
-  width:13vw;
-  height:13vw;
-}
-
-.page4{
-  height:100vh;
-}
-.page3{
-  height:100vh;
+.page{
+  position:relative;
 }
 
 h3 {
@@ -208,28 +106,6 @@ h3 {
   background: grey;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
-
-.full-screen {
-  height:100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-#mycarousel{
-  margin:0;
-  width:100%;
-  height:100%;
-  overflow: hidden;
-  z-index: 2
-}
-.item{
-  overflow: hidden;
-  width:100vw;
-  height:100%;
-}
-.page5{
-  height:100vh;
 }
 
 .bis{
@@ -243,16 +119,312 @@ h3 {
     bottom:10%;
     left:20%;
 }
+p.losange1,p.losange2{
 
-.page5 .losange2.grand{
-  width:565px;
-  height:565px;
-  position:absolute;
-  top:45%;
-  right:70%;
 }
+.losange1, .losange2{
+  position:absolute;
+}
+.tresgrand{
+  width:600px;
+  height:600px;
+}
+.grand{
+  width:400px;
+  height:400px;
+}
+.moyengrand{
+  width:300px;
+  height:300px;
+}
+.moyen{
+  width:250px;
+  height:250px;
+}
+.moyenpetit{
+  width:200px;
+  height:200px;
+}
+.petit{
+  width:150px;
+  height:150px;
+}
+
+
+/* POSITIONNEMENT DES LOSANGES*/
+/* Page 1*/
+
+#p1 .losange1.grand{
+  top:0;
+  left:0;
+}
+
+#p1 .losange2.moyengrand{
+  top:20%;
+  left:70%;
+}
+
+#p1 .losange1.petit{
+  top:20%;
+  left:80%;
+}
+
+#p1 .losange2.moyenpetit{
+  top:70%;
+  left:20%;
+}
+
+#p1 .losange1.moyen{
+  top:60%;
+  left:80%;
+}
+#p1 .losange2.petit{
+  top:10%;
+  left:20%;
+}
+/* Page 2*/
+#p2 .losange1.moyenpetit{
+  top:70%;
+  left:5%;
+}
+#p2 .losange2.tresgrand{
+  top:10%;
+  left:10%;
+}
+
+#p2 .losange2.tresgrand p{
+width:500px;
+position:relative;
+top:-360px;
+left:70px;
+}
+
+
+
+
+
+
+
 
 .page5 .losange2.grand img{
   height:400px;
   width:400px;
 }
+
+.wrapper{
+  width:60%;
+  position:relative;
+  margin:5% 0;
+}
+
+/**
+ * Padding is set relative to the width
+ * of the element, so here padding-top:60% is
+ * a percentage of the width. This allows us
+ * to set the height as a ratio of the width
+ *
+ */
+.carousel{
+	width: 100%;
+	position: relative;
+	padding-top: 60%;
+	overflow: hidden;
+}
+
+.inner{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+/**
+ * ==========================
+ * Animation styles
+ *
+ * Notes:
+ * 1. We use z-index to position active slides in-front
+ * of non-active slides
+ * 2. We set right:0 and left:0 on .slide to provide us with
+ * a default positioning on both sides of the slide. This allows
+ * us to trigger JS and CSS3 animations easily
+ *
+ */
+.slide{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	right:0;
+	left:0;
+	z-index: 1;
+	opacity: 0;
+}
+
+.slide.active,
+.slide.left,
+.slide.right{
+	z-index: 2;
+	opacity: 1;
+}
+
+/**
+ * ==========================
+ * JS animation styles
+ *
+ * We use jQuery.animate to control the sliding animations
+ * when CSS3 animations are not available. In order for
+ * the next slide to slide in from the right, we need
+ * to change the left:0 property of the slide to left:auto
+ *
+ */
+
+.js-reset-left{left:auto}
+
+/**
+ * ==========================
+ * CSS animation styles
+ *
+ * .slide.left and .slide.right set-up
+ * the to-be-animated slide so that it can slide
+ * into view. For example, a slide that is about
+ * to slide in from the right will:
+ * 1. Be positioned to the right of the viewport (right:-100%)
+ * 2. Slide in when the style is superseded with a more specific style (right:0%)
+ *
+ */
+.slide.left{
+	left:-100%;
+	right:0;
+}
+
+.slide.right{
+	right:-100%;
+	left: auto;
+}
+
+.transition .slide.left{left:0%}
+.transition .slide.right{right:0%}
+
+/**
+ * The following classes slide the previously active
+ * slide out of view before positioning behind the
+ * currently active slide
+ *
+ */
+.transition .slide.shift-right{right: 100%;left:auto}
+.transition .slide.shift-left{left: 100%;right:auto}
+
+/**
+ * This sets the CSS properties that will animate. We set the
+ * transition-duration property dynamically via JS.
+ * We use the browser's default transition-timing-function
+ * for simplicity's sake
+ *
+ * It is important to note that we are using CodePen's inbuilt
+ * CSS3 property prefixer. For your own projects, you will need
+ * to prefix the transition and transform properties here to ensure
+ * reliable support across browsers
+ *
+ */
+.transition .slide{
+	transition-property: right, left, margin;
+}
+
+/**
+ * ==========================
+ * Indicators
+ *
+ */
+.indicators{
+  width:100%;
+  position: absolute;
+  bottom:0;
+  z-index: 4;
+  padding:0;
+  text-align: center;
+}
+
+.indicators li{
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	margin: 5px;
+	background: #fff;
+	list-style-type: none;
+	border-radius: 50%;
+  cursor:pointer;
+  transition:background 0.3s ease-out;
+}
+
+.indicators li.active{background:#93278f}
+
+.indicators li:hover{background-color:#2b2b2b}
+
+/**
+ * ==========================
+ * Arrows
+ *
+ */
+.arrow{
+  width: 20px;
+  height: 20px;
+  position:absolute;
+  top:50%;
+  z-index:5;
+  border-top:3px solid #fff;
+  border-right:3px solid #fff;
+  cursor:pointer;
+  transition:border-color 0.3s ease-out;
+}
+
+.arrow:hover{border-color:#93278f}
+
+.arrow-left{
+  left:20px;
+  transform:rotate(225deg);
+}
+
+.arrow-right{
+  right:20px;
+  transform:rotate(45deg);
+}
+
+/**
+ * ==========================
+ * For demo purposes only
+ *
+ * Please note that the styles below are used
+ * for the purposes of this demo only. There is no need
+ * to use these in any of your own projects
+ *
+ */
+.slide{
+	text-align:center;
+  padding-top:25%;
+  background-size:cover;
+}
+
+h1{
+	width:100px;
+  height:100px;
+  background-color:rgba(146, 45, 141,0.7);
+	margin:auto;
+  line-height:100px;
+	color:#fff;
+	font-size:2.4em;
+  border-radius:50%;
+}
+
+.slide:nth-child(1){
+	background-image:url('img/carou/image1.jpg');
+ }
+
+.slide:nth-child(2){
+	background-image:url('img/carou/image2.jpg');
+}
+
+.slide:nth-child(3){
+	background-image:url('img/carou/image4.jpg');
+ }
