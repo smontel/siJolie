@@ -48,7 +48,7 @@ p, h1, h2, div{
   right: 0;
 }
 .blocTxt{
-  width:500px;;
+  width:700px;
   float:right;
   margin-top: 50px;
   margin-right: 100px;
@@ -196,7 +196,8 @@ p.losange1,p.losange2{
 width:500px;
 position:relative;
 top:-360px;
-left:70px;
+left:50px;
+  text-align: center;
 }
 
 
