@@ -367,7 +367,7 @@ left:50px;
   transition:background 0.3s ease-out;
 }
 
-.indicators li.active{background:#93278f}
+.indicators li.active{background:#c074bc}
 
 .indicators li:hover{background-color:#2b2b2b}
 
@@ -414,7 +414,8 @@ left:50px;
   padding-top:25%;
   background-size:cover;
 }
-.bdown{
+
+#butt{
   z-index: 10;
 	position: fixed;
 	bottom:50px;
@@ -424,9 +425,15 @@ left:50px;
 	margin-left: -12px;
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
 	box-sizing: border-box;
+}
+.bdown{
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.bup{
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 h1{
