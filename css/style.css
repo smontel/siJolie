@@ -7,13 +7,19 @@
     font-family: 'maj'; /*a name to be used later*/
     src: url('font/Lavanderia-Sturdy.otf'); /*URL to font*/
 }
-
-p, h1, h2, div{
+h2{
+  font-family: 'min';
+}
+p, div{
   font-family: 'min';
   font-size: 1.1em;
 }
 .col-md-12{
   height:100%;
+  padding:0;
+}
+h1{
+  display:none;
 }
 .maj{
   font-family: 'maj';
@@ -405,6 +411,20 @@ left:50px;
 	text-align:center;
   padding-top:25%;
   background-size:cover;
+}
+.bdown{
+  z-index: 10;
+	position: fixed;
+	bottom:50px;
+	right: 50px;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
 }
 
 h1{
