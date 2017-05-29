@@ -23,6 +23,8 @@ h1{
 }
 .maj{
   font-family: 'maj';
+  font-size: 2em;
+  color:#c074bc;
 }
 .entete {
   height: 100vh;
