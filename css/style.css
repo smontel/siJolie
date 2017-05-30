@@ -57,9 +57,9 @@ h1{
 }
 .blocTxt{
   position:absolute;
-  right:0;
+  right:30px;
   width:700px;
-  margin-top: 50px;
+  margin-top: 250px;
 }
 .imgBloc{
   height:100vh;
@@ -470,7 +470,8 @@ h1{
  z-index: 1;
  float: left;
  color:white;
- overflow: hidden;
+
+ top:200px;
  }
 
  .itemss{
@@ -478,6 +479,14 @@ h1{
  width:150px;
  height:150px;
  margin:5px;
+ }
+ .itemss img{
+   width:100%;
+   height:100%;
+ }
+ .itemss img:hover{
+opacity:0.5;
+transition: opacity 1s;
  }
 .lossangeB{
   background-image: url('img/losange3.png');
@@ -488,7 +497,7 @@ h1{
 .first{
 }
  .sec{
-   top:455px;
+   top:655px;
    right:187px;
    padding:0
  }
