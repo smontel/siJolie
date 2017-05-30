@@ -468,11 +468,21 @@ h1{
  padding:0px;
  transform: rotate(45deg);
  z-index: 1;
- float: left;
  color:white;
 
- top:200px;
  }
+.left{
+  top:200px;
+  float:left;
+}
+.right{
+  top:120px;
+  float:right;
+}
+.right.sec{
+  top:575px;
+  left:187px;
+}
 
  .itemss{
    float: left;
@@ -483,10 +493,12 @@ h1{
  .itemss img{
    width:100%;
    height:100%;
+   opacity:0.6;
+   transition: opacity 1s ease;
  }
  .itemss img:hover{
-opacity:0.5;
-transition: opacity 1s;
+opacity:1;
+
  }
 .lossangeB{
   background-image: url('img/losange3.png');
@@ -496,7 +508,7 @@ transition: opacity 1s;
 }
 .first{
 }
- .sec{
+ .left.sec{
    top:655px;
    right:187px;
    padding:0
