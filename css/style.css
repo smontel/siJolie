@@ -98,7 +98,8 @@ video.fillWidth {
   height: 100%;
 }
 .row{
-    height:100vh;
+    height:100%;
+    min-height: 100vh;
     width:100%;
     margin:0;
     position:relative;
@@ -480,11 +481,11 @@ h1{
   float:left;
 }
 .right{
-  top:0;
+  top:-100px;
   float:right;
 }
 .right.sec{
-  top:455px;
+  top:355px;
   left:187px;
 }
 .avis{
@@ -534,8 +535,6 @@ opacity:1;
   background-repeat: no-repeat;
   background-position: left top;
 }
-.first{
-}
  .left.sec{
    top:655px;
    right:187px;
@@ -544,4 +543,9 @@ opacity:1;
 .tresgrand img{
   width:100%;
   height:100%;
+}
+@media screen and (max-height:900px){
+  .row{
+    overflow:hidden;
+  }
 }
