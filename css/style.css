@@ -56,10 +56,10 @@ h1{
   right: 0;
 }
 .blocTxt{
+  position:absolute;
+  right:0;
   width:700px;
-  float:right;
   margin-top: 50px;
-  margin-right: 100px;
 }
 .imgBloc{
   height:100vh;
@@ -426,16 +426,19 @@ left:50px;
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
 	box-sizing: border-box;
+  transition: transform 2s;
+
 }
 .bdown{
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 .bup{
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+-o-transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+transform: rotate(135deg);
 }
-
 h1{
 	width:100px;
   height:100px;
@@ -457,4 +460,35 @@ h1{
 
 .slide:nth-child(3){
 	background-image:url('img/carou/image4.jpg');
+ }
+ .contlos{
+   position:relative;
+ width:640px;
+ height: 640px;
+ padding:0px;
+ transform: rotate(45deg);
+ z-index: 1;
+ float: left;
+ color:white;
+ overflow: hidden;
+ }
+
+ .itemss{
+   float: left;
+ width:150px;
+ height:150px;
+ margin:5px;
+ }
+.lossangeB{
+  background-image: url('img/losange3.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.first{
+}
+ .sec{
+   top:455px;
+   right:187px;
+   padding:0
  }
